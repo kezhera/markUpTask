@@ -1,0 +1,101 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    color: #fff;
+}
+@font-face {
+    font-family: regular;
+    src: url(../font/Segoe\ UI.woff);
+}
+@font-face {
+    font-family: semBold;
+    src: url(../font/Montserrat-SemiBold.ttf);
+}
+@font-face {
+    font-family: light;
+    src: url(sansation_light.woff);
+}
+ul , li {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    transition: 0.2s;
+}
+.d-flex{
+    display: flex;
+}
+input:focus , input:hover , textarea:focus{
+    outline: none;
+}
+.img-frame img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+html {
+    scroll-behavior: smooth;
+}
+.dropdown{
+    position: relative;
+}
+.select{
+    border: 1px solid #BDC3C7;
+    border-right: none;
+    width: 100%;
+    height: 100%;
+    width: 90px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    background-image: url(../img/down-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 5px ) center;
+    cursor: pointer;
+}
+.options{
+    width: calc(100% - 1px);
+    position: absolute;
+    bottom: -1px;
+    transform: translateY(100%);
+    background-color: #fff;
+    border: 1px solid #BDC3C7;
+    border-bottom: none;
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.dropdown.active .options{
+    max-height: 130px;
+}
+.option{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #BDC3C7;
+    cursor: pointer;
+}
+.option:hover .option__text{
+    padding-left: 5px;
+}
+.option__text{
+    font-size: 16px;
+    font-family: regular;
+    color: #000000;
+    transition: 0.2s;
+}
+.option__img{
+    height: 10px;
+    width: 23px;
+    margin-right: 3px;
+    object-fit: cover;
+}
+main{
+    position: relative;
+}
+.menu{
+    display: none;
+}

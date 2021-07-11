@@ -1,0 +1,7 @@
+<svg id="mouse" xmlns="http://www.w3.org/2000/svg" width="21" height="35" viewBox="0 0 21 35">
+  <g id="mouse-2" data-name="mouse" fill="none" stroke="#fff" stroke-width="2">
+    <rect width="21" height="35" rx="10.5" stroke="none"/>
+    <rect x="1" y="1" width="19" height="33" rx="9.5" fill="none"/>
+  </g>
+  <rect id="Rectangle_27" data-name="Rectangle 27" width="3" height="8" rx="1.5" transform="translate(9 20)" fill="#fff"/>
+</svg>
